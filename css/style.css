@@ -406,10 +406,14 @@ p{
     .wrap-contact100 {
       padding: 110px 15px 157px 15px;
     }
+      .bg{
+          height:100%;
+      }
   }
   .resp{
     font-size:25px;
   }
+
   
   @media screen and (max-width:560px){
     .resp{
