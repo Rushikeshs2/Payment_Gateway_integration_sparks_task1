@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <title> The Sparks Foundation TASK 1 </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<style type="text/css">
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.cnt{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+}
+.contact-container
+{margin: 3% 0;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    max-width: 90%;
+    box-shadow:  9px 9px 18px #cdcdcd,              -9px -9px 18px #ffffff;
+}
+/* Left side Design*/
+.contact-left
+{
+    width: 60%;
+    padding: 20px;
+    color: #52565e;
+}
+.contact-form
+{
+    margin-top: 10px;
+    width: 100%;
+}
+.single-row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.form-in
+{
+    padding: 0.5em;
+    font-size: 14px;
+    width: 100%;
+    resize: vertical;
+    margin-top: 1em;
+    background: #eeeeee;
+    border: none;
+    box-shadow: inset 5px 5px 12px #e0e0e0, 
+            inset -5px -5px 12px #fcfcfc;
+            outline: none;
+    color: #52565e;
+}
+.single-row + input
+{
+margin: 0 10px;
+}
+.ml
+{
+    margin-left: 10px;
+}
+.mr
+{
+    margin-right: 10px;
+}
+
+.multiple-row
+{
+    position: relative;
+}
+#submit
+{
+    display: none;
+}
+#submit + label
+{
+    position: absolute;
+    font-size: 14px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #3369e7;
+    border-radius: 100%;
+    color: #eeeeee;
+    box-shadow:  6px 6px 12px #bebebe, 
+             -6px -6px 12px #ffffff;
+    cursor: pointer;
+}
+
+#submit + label:hover
+{
+    box-shadow: inset 6px 6px 12px #2954b9, 
+            inset -6px -6px 12px #3d7eff;
+}
+/* Right side Design*/
+.contact-right
+{
+    padding: 20px;
+    width: 40%;
+    background: linear-gradient(#3369e798,#3369e798),url('https://images.unsplash.com/photo-1597773026935-df49538167e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    color: #eeeeee;
+}
+textarea
+{
+    min-height: 200px;
+}
+
+.contact-info,.social-links
+{
+font-size: 14px;
+margin-top: 40px;
+}
+.contact-info p
+{
+    margin-bottom: 20px;
+}
+.contact-info p  i
+{
+    margin-right: 20px;
+}
+
+.social-links a
+{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #eeeeee;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+.social-links a:hover
+{
+margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 770px)
+{
+    .contact-container
+    {
+        flex-direction: column;
+    }
+    .contact-right,.contact-left
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px)
+{
+    .contact-container
+    {
+        flex-direction: column;
+    }
+    .contact-right,.contact-left
+    {
+        width: 100%;
+    }
+    .contact-info{
+        font-size: 12px;
+    }
+    .h2{
+        font-size: 15px;
+    }
+}
+</style>
+
+
+    </head>
+    <body >
+        <section class="bg">
+        <nav class="navbar navbar-expand-sm my-2">
+            <a class="navbar-brand ml-5" href="#"><img src="img/sparklogo.png"></a>
+            <a class="navbar-brand ml-5" href="#">Rushikesh Susar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars" style="color: #fff;font-size: 150%;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+<div class="cnt">
+        <div class="contact-container">
+  <div class="contact-left">
+    <h2 class="respt">Get In Touch</h2>
+    <form class="contact-form" method="POST" data-netlify="true">
+      <div class="single-row">
+          <input type="text"  placeholder="First Name" class="form-in mr">
+          <input type="text" placeholder="Last Name"class="form-in ml" >
+      </div>
+      <div class="multiple-row">
+          <input type="email" placeholder="Email" class="form-in">
+          <textarea placeholder="Your Message" class="form-in"></textarea>
+          <input type="submit" id="submit"><label for="submit"><i class="fas fa-paper-plane"></i></label>
+      </div>
+                
+    </form>
+  </div>
+  <div class="contact-right">
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+      <p class = "ctp "><i class="fas fa-phone-alt"></i> +91 9800000000 </p>
+      <p class="ctp"><i class="fas fa-envelope"></i> sparks@fn.com </p>
+      <p class="ctp"><i class="fas fa-map-marker-alt"></i> Maharashtra,India</p>
+    </div>
+
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section> <div class="footer" >
+
+  <div class="row">
+                <div class="col-8">     
+                 <p>Sparks Foundation</p>
+                                   <div class="copyright-text"> 
+                                        <p style="font-size: 15px;">Copyright &copy; 2021 Sparks Foundation </p>
+                                   </div>
+                </div>
+           <div class="col-4">
+    <p class="resp">Contact us on</p>
+  <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                    </ul>
+           </div>
+     </div>
+
+</div>
+</section>
+
+
+
+
+        <script >
+            $('.js-tilt').tilt({
+                scale: 1.1
+            })
+        </script>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/c252d9c8b4.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+    </html>
